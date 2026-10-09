@@ -2,7 +2,8 @@
 import SiteLayout from '../layouts/SiteLayout.astro';
 import { Content as EnglishPolicy } from '../content/privacy-en.md';
 import { Content as KoreanPolicy } from '../content/privacy-ko.md';
-import { site } from '../config/site';
+import { Content as EnglishServices } from '../content/privacy-services-en.md';
+import { Content as KoreanServices } from '../content/privacy-services-ko.md';
 ---
 
 <SiteLayout
@@ -47,33 +48,20 @@ import { site } from '../config/site';
     </section>
     <section id="website" class="website-note" aria-labelledby="website-title">
       <h2 id="website-title">This website & support email</h2>
-      <p>
-        <strong>Website notice updated: October 9, 2026.</strong> The offline
-        game policy above describes the game. Visiting this website or emailing
-        us involves separate services.
-      </p>
-      <h3>Website hosting</h3>
-      <p>
-        This website is hosted on Vercel. To serve and operate websites, Vercel
-        processes technical request information such as IP addresses and system
-        configuration information, as described in{' '}
-        <a
-          href="https://vercel.com/legal/privacy-notice"
-          rel="noopener noreferrer"
-        >
-          Vercel’s privacy notice
+      <nav class="anchor-nav" aria-label="Website and support notice languages">
+        <a href="#website-english" lang="en">
+          English notice
         </a>
-        . We have not added analytics, advertising, or tracking scripts to this
-        website.
-      </p>
-      <h3>Contacting support</h3>
-      <p>
-        If you email <a href={`mailto:${site.email}`}>{site.email}</a>, you
-        share your email address, the contents of your message, and any
-        attachments you choose to send. We use that information to respond to
-        your inquiry. Please send only information needed to explain your
-        question or problem.
-      </p>
+        <a href="#website-korean" lang="ko">
+          한국어 안내
+        </a>
+      </nav>
+      <div id="website-english" lang="en">
+        <EnglishServices />
+      </div>
+      <div id="website-korean" lang="ko">
+        <KoreanServices />
+      </div>
     </section>
   </div>
 </SiteLayout>

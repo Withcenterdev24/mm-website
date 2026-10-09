@@ -27,7 +27,9 @@ Approved design and implementation plan are in `docs/superpowers/`. Progress is 
 
 ## Privacy
 
-`/privacy/` publishes the supplied game policy in English and Korean, preserving the October 7, 2026 date. Source documents live in `src/content/`; headings are adapted to the page outline. The separate website notice explains hosting and email support. Its hosting source is [Vercel’s privacy notice](https://vercel.com/legal/privacy-notice), reviewed October 9, 2026. The site adds no analytics or tracking scripts.
+`/privacy/` publishes the game policy and a separate website/support notice in English and Korean, updated October 9, 2026. Source documents live in `src/content/privacy-*.md`; headings follow the page outline. The policy covers local saves and deletion, platform backups, hosting, Gmail support, retention criteria, privacy requests and children. The site adds no analytics or tracking scripts.
+
+The privacy audit and remaining publication checks are in [docs/privacy-audit.md](docs/privacy-audit.md). Before treating the policy as finalized, confirm Withcenter's legal operator and country, adopt the stated support retention/deletion process, and verify hosting settings and the public policy URL. Keep the game's source policy, in-app access and store disclosures consistent with the published page.
 
 ## Verification and formatting
 

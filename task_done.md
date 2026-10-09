@@ -13,12 +13,14 @@
 - ~~Verify metadata, mobile layouts, accessibility, and production build.~~
 - ~~Publish the verified website source to GitHub.~~
 - ~~Remove macOS `._*` metadata files and confirm recursive Git exclusions.~~
+- ~~Audit and expand the bilingual privacy policy for game saves, deletion, backups, website hosting, support and privacy requests.~~
+- Confirm privacy operator details, operational retention and release/publication checks in docs/privacy-audit.md.
 - Complete Vercel sign-in/import and verify the live deployment.
 
 ## In progress now
 
-Website implementation and metadata cleanup are committed to GitHub. Vercel sign-in/import remains pending. Validation and the deferred minor are recorded in docs/verification.md.
+The expanded privacy page passes the production build, Astro check, 8 artifact tests and 3 targeted browser checks. Legal operator/country and operational/publication confirmations remain pending; see docs/privacy-audit.md. Vercel sign-in/import remains pending.
 
 ## What should be next
 
-Import Withcenterdev24/mm-website into the user’s Vercel account and verify the live URLs. Existing Vercel browser tab showed an account-not-found login error; sign-in is pending user action. Add verified public store links when available.
+Confirm the outstanding privacy facts and synchronize the game's policy/in-app link and store disclosures. Import Withcenterdev24/mm-website into the user’s Vercel account and verify the live URLs. Existing Vercel browser tab showed an account-not-found login error; sign-in is pending user action. Add verified public store links when available.

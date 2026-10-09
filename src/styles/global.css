@@ -638,6 +638,10 @@ main:focus {
   letter-spacing: -0.02em;
   margin-block: 28px 12px;
 }
+.content-wrap h4 {
+  font-size: 18px;
+  margin-block: 26px 12px;
+}
 .content-wrap p {
   margin-block: 14px;
 }
@@ -702,7 +706,8 @@ main:focus {
 .policy-section h2:first-child {
   margin-top: 16px;
 }
-.policy-section[lang='ko'] {
+.policy-section[lang='ko'],
+.website-note [lang='ko'] {
   word-break: keep-all;
   overflow-wrap: anywhere;
 }
@@ -715,6 +720,11 @@ main:focus {
 }
 .website-note h2 {
   margin-top: 0;
+}
+#website-korean {
+  border-top: 1px solid var(--navy);
+  margin-top: 36px;
+  padding-top: 8px;
 }
 .not-found {
   padding-block: 100px;

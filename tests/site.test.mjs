@@ -58,8 +58,10 @@ test('privacy_languages_and_game_scope_are_preserved', () => {
   const $ = page('privacy');
   assert.equal($('#english').attr('lang'), 'en');
   assert.equal($('#korean').attr('lang'), 'ko');
-  assert.ok($('#english').text().includes('October 7, 2026'));
-  assert.ok($('#korean').text().includes('2026년 10월 7일'));
+  assert.equal($('#website-english').attr('lang'), 'en');
+  assert.equal($('#website-korean').attr('lang'), 'ko');
+  assert.ok($('#english').text().includes('October 9, 2026'));
+  assert.ok($('#korean').text().includes('2026년 10월 9일'));
   assert.ok($('#english').text().includes('thruthesky@gmail.com'));
   assert.ok($('#korean').text().includes('thruthesky@gmail.com'));
   assert.ok(
