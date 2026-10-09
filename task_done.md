@@ -16,7 +16,7 @@
 
 ## In progress now
 
-Final independent code review. Astro check: 0 errors/warnings; production build passed; 8 artifact/metadata tests and 10 browser tests passed; mobile/tablet/desktop screenshots inspected.
+Independent review passed with no blocking issues. Publishing the verified source to GitHub; Vercel sign-in/import remains pending. Validation and deferred minor are recorded in docs/verification.md.
 
 ## What should be next
 
