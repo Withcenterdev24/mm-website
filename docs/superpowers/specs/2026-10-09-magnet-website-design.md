@@ -1,7 +1,7 @@
 # Magnet Mayhem website design
 
 Date: 2026-10-09
-Status: Design direction approved; written specification awaiting review.
+Status: Written specification approved by the user on 2026-10-09.
 
 ## Purpose and success criteria
 

@@ -4,7 +4,9 @@
 - ~~Agree on Astro, the arcade visual direction, and home/support/privacy scope.~~
 - ~~Write and self-review the website design specification.~~
 - ~~Confirm the user-supplied GitHub repository: Withcenterdev24/mm-website (public, initially empty).~~
-- Review the written specification and implementation plan.
+- ~~Review and approve the written specification.~~
+- ~~Write and self-review the implementation plan.~~
+- Review the implementation plan and choose execution method.
 - Build and verify the marketing homepage.
 - Build and verify the support page.
 - Build and verify the bilingual privacy page.
@@ -13,8 +15,8 @@
 
 ## In progress now
 
-Written design specification awaiting user review before implementation planning.
+Implementation plan written; awaiting user review and execution-method selection.
 
 ## What should be next
 
-Review the specification, write the implementation plan, and implement complete vertical slices. Connect the source to Withcenterdev24/mm-website and verify Vercel access before creating hosting resources.
+Review the implementation plan, select native or subagent-driven execution, and build the homepage first. Source is connected to Withcenterdev24/mm-website; verify Vercel access before creating hosting resources.
