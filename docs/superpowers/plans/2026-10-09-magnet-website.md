@@ -101,4 +101,4 @@
 
 ## Execution recommendation
 
-Use native execution for this small static site: the four tasks share a compact layout and configuration, and there is no backend or account system. Complete a final independent review after browser verification. Written plan review and execution-method selection are required before product implementation.
+Use native execution for this small static site: the four tasks share a compact layout and configuration, and there is no backend or account system. Complete a final independent review after browser verification. The user approved this plan and selected native execution.

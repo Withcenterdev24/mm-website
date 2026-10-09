@@ -10,13 +10,14 @@
 - ~~Build and verify the marketing homepage.~~
 - ~~Build and verify the support page.~~
 - ~~Build and verify the bilingual privacy page.~~
-- Verify metadata, mobile layouts, accessibility, and production build.
-- Set up GitHub and Vercel delivery.
+- ~~Verify metadata, mobile layouts, accessibility, and production build.~~
+- Publish the verified website source to GitHub.
+- Complete Vercel sign-in/import and verify the live deployment.
 
 ## In progress now
 
-All three pages built; verifying metadata, responsive behavior, accessibility, and delivery.
+Final independent code review. Astro check: 0 errors/warnings; production build passed; 8 artifact/metadata tests and 10 browser tests passed; mobile/tablet/desktop screenshots inspected.
 
 ## What should be next
 
-Complete support and privacy pages, then metadata/browser checks and Vercel delivery. Vercel login is pending user action.
+Resolve any material review findings, publish source to Withcenterdev24/mm-website, then import/deploy through the user’s Vercel account. Existing Vercel browser tab shows an account-not-found login error; sign-in is pending user action.

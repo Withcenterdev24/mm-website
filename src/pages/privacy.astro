@@ -4,11 +4,76 @@ import { Content as EnglishPolicy } from '../content/privacy-en.md';
 import { Content as KoreanPolicy } from '../content/privacy-ko.md';
 import { site } from '../config/site';
 ---
-<SiteLayout title="Privacy Policy | Magnet Mayhem" description="Read Magnet Mayhem’s privacy policy in English and Korean, including offline game data, device-local progress, website hosting, and contact information.">
-  <section class="page-intro section-wrap"><p class="eyebrow">CLEAR RULES. NO SURPRISES.</p><h1>Your privacy<span class="red-period">.</span></h1><p>The game’s privacy policy, plus how this website and support email handle information.</p><nav class="anchor-nav" aria-label="Privacy sections"><a href="#english" lang="en">English</a><a href="#korean" lang="ko">한국어</a><a href="#website">Website & support</a></nav></section>
+
+<SiteLayout
+  title="Privacy Policy | Magnet Mayhem"
+  description="Read Magnet Mayhem’s privacy policy in English and Korean, including offline game data, device-local progress, website hosting, and contact information."
+>
+  <section class="page-intro section-wrap">
+    <p class="eyebrow">CLEAR RULES. NO SURPRISES.</p>
+    <h1>
+      Your privacy<span class="red-period">.</span>
+    </h1>
+    <p>
+      The game’s privacy policy, plus how this website and support email handle
+      information.
+    </p>
+    <nav class="anchor-nav" aria-label="Privacy sections">
+      <a href="#english" lang="en">
+        English
+      </a>
+      <a href="#korean" lang="ko">
+        한국어
+      </a>
+      <a href="#website">Website & support</a>
+    </nav>
+  </section>
   <div class="content-wrap">
-    <section id="english" lang="en" class="policy-section" aria-label="Game privacy policy in English"><EnglishPolicy /></section>
-    <section id="korean" lang="ko" class="policy-section" aria-label="게임 개인정보처리방침"><KoreanPolicy /></section>
-    <section id="website" class="website-note" aria-labelledby="website-title"><h2 id="website-title">This website & support email</h2><p><strong>Website notice updated: October 9, 2026.</strong> The offline game policy above describes the game. Visiting this website or emailing us involves separate services.</p><h3>Website hosting</h3><p>This website is hosted on Vercel. To serve and operate websites, Vercel processes technical request information such as IP addresses and system configuration information, as described in <a href="https://vercel.com/legal/privacy-notice" rel="noopener noreferrer">Vercel’s privacy notice</a>. We have not added analytics, advertising, or tracking scripts to this website.</p><h3>Contacting support</h3><p>If you email <a href={`mailto:${site.email}`}>{site.email}</a>, you share your email address, the contents of your message, and any attachments you choose to send. We use that information to respond to your inquiry. Please send only information needed to explain your question or problem.</p></section>
+    <section
+      id="english"
+      lang="en"
+      class="policy-section"
+      aria-label="Game privacy policy in English"
+    >
+      <EnglishPolicy />
+    </section>
+    <section
+      id="korean"
+      lang="ko"
+      class="policy-section"
+      aria-label="게임 개인정보처리방침"
+    >
+      <KoreanPolicy />
+    </section>
+    <section id="website" class="website-note" aria-labelledby="website-title">
+      <h2 id="website-title">This website & support email</h2>
+      <p>
+        <strong>Website notice updated: October 9, 2026.</strong> The offline
+        game policy above describes the game. Visiting this website or emailing
+        us involves separate services.
+      </p>
+      <h3>Website hosting</h3>
+      <p>
+        This website is hosted on Vercel. To serve and operate websites, Vercel
+        processes technical request information such as IP addresses and system
+        configuration information, as described in{' '}
+        <a
+          href="https://vercel.com/legal/privacy-notice"
+          rel="noopener noreferrer"
+        >
+          Vercel’s privacy notice
+        </a>
+        . We have not added analytics, advertising, or tracking scripts to this
+        website.
+      </p>
+      <h3>Contacting support</h3>
+      <p>
+        If you email <a href={`mailto:${site.email}`}>{site.email}</a>, you
+        share your email address, the contents of your message, and any
+        attachments you choose to send. We use that information to respond to
+        your inquiry. Please send only information needed to explain your
+        question or problem.
+      </p>
+    </section>
   </div>
 </SiteLayout>

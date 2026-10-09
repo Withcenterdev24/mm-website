@@ -28,3 +28,31 @@ Approved design and implementation plan are in `docs/superpowers/`. Progress is 
 ## Privacy
 
 `/privacy/` publishes the supplied game policy in English and Korean, preserving the October 7, 2026 date. Source documents live in `src/content/`; headings are adapted to the page outline. The separate website notice explains hosting and email support. Its hosting source is [Vercel’s privacy notice](https://vercel.com/legal/privacy-notice), reviewed October 9, 2026. The site adds no analytics or tracking scripts.
+
+## Verification and formatting
+
+```sh
+npm run check
+npm run build
+npm test
+npx playwright install chromium
+npm run test:browser
+npm run format:check
+```
+
+Artifact tests check routes, internal references, privacy language boundaries, store availability, and metadata. Metadata tests build isolated fixtures in `.astro/` on the same filesystem as the project (Astro moves build assets with filesystem renames). Browser tests use Chromium with JavaScript disabled at 360px, 768px, and 1440px widths. They check image loading, overflow, keyboard skip navigation, page navigation, policy anchors, and 404 recovery. `npm run format` formats the source.
+
+## Vercel deployment
+
+1. Sign in to the Vercel account/team that should own the site.
+2. Import **Withcenterdev24/mm-website** from GitHub, with production branch `main` and root directory `.`.
+3. Use the **Astro** framework preset, Node **24.x**, build command `npm run build`, and output directory `dist`. The committed `vercel.json` declares the framework/build/output; no server adapter is needed.
+4. Add `PUBLIC_ANDROID_URL` and `PUBLIC_IOS_URL` only when public listings are verified. They must use HTTPS on `play.google.com` and `apps.apple.com`, respectively; malformed values fail the build.
+5. Deploy. Vercel's `VERCEL_PROJECT_PRODUCTION_URL` supplies the actual production domain for canonicals, social images, robots, and sitemap, including in preview builds. An optional `SITE_URL` overrides it for a confirmed custom domain; use an HTTPS origin with no path, query, credentials, or fragment. Enable Vercel's automatic system environment variables if disabled.
+6. Confirm `/`, `/support/`, `/privacy/`, `/robots.txt`, `/sitemap.xml`, and an unknown path. Home, support, and privacy must return 200, and the unknown path must return 404. Copy those real production URLs into store metadata.
+
+With no production origin configured, absolute canonical/social URL metadata is omitted, the sitemap has no entries, and robots disallows indexing. Add the confirmed origin and rebuild before indexing a standalone deployment. Vercel preview protection and indexing controls remain managed in the Vercel project.
+
+Static deployment requires no Vercel adapter, database, or runtime secrets. A successful local build is not proof of a live deployment. `task_done.md` records the actual hosting status.
+
+References reviewed October 9, 2026: [Astro's Vercel deployment guide](https://docs.astro.build/en/guides/deploy/vercel/), [Astro on Vercel](https://vercel.com/docs/frameworks/frontend/astro), and [Vercel system environment variables](https://vercel.com/docs/environment-variables/system-environment-variables).
