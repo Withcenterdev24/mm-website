@@ -1,3 +1,4 @@
+# macOS metadata, including AppleDouble sidecars at any directory depth.
 .DS_Store
 ._*
 node_modules/
