@@ -9,13 +9,13 @@
 - ~~Review the implementation plan and choose native execution.~~
 - ~~Build and verify the marketing homepage.~~
 - ~~Build and verify the support page.~~
-- Build and verify the bilingual privacy page.
+- ~~Build and verify the bilingual privacy page.~~
 - Verify metadata, mobile layouts, accessibility, and production build.
 - Set up GitHub and Vercel delivery.
 
 ## In progress now
 
-Homepage and support verified; publishing the bilingual privacy page.
+All three pages built; verifying metadata, responsive behavior, accessibility, and delivery.
 
 ## What should be next
 

@@ -39,3 +39,15 @@ test('support_contact_and_controls_are_accessible_without_scripts', () => {
   assert.ok($('main').text().includes('ATTRACT'));
   assert.ok($('main').text().includes('REPULSE'));
 });
+test('privacy_languages_and_game_scope_are_preserved', () => {
+  const $ = page('privacy');
+  assert.equal($('#english').attr('lang'), 'en');
+  assert.equal($('#korean').attr('lang'), 'ko');
+  assert.ok($('#english').text().includes('October 7, 2026'));
+  assert.ok($('#korean').text().includes('2026년 10월 7일'));
+  assert.ok($('#english').text().includes('thruthesky@gmail.com'));
+  assert.ok($('#korean').text().includes('thruthesky@gmail.com'));
+  assert.ok($('#website').length, 'Website handling must be distinct from the offline game');
+  assert.ok($('#website a[href="https://vercel.com/legal/privacy-notice"]').length);
+  assert.equal($('main h1').length, 1, 'Imported policy headings must keep a logical document outline');
+});

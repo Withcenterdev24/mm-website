@@ -24,3 +24,7 @@ Approved design and implementation plan are in `docs/superpowers/`. Progress is 
 ## Support
 
 `/support/` covers controls, training, saved progress, and troubleshooting. Contact uses a mailto link, not a hosted form. Gameplay guidance follows the Godot project README; update it when controls or save behavior change.
+
+## Privacy
+
+`/privacy/` publishes the supplied game policy in English and Korean, preserving the October 7, 2026 date. Source documents live in `src/content/`; headings are adapted to the page outline. The separate website notice explains hosting and email support. Its hosting source is [Vercel’s privacy notice](https://vercel.com/legal/privacy-notice), reviewed October 9, 2026. The site adds no analytics or tracking scripts.
