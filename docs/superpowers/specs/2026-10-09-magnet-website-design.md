@@ -61,7 +61,7 @@ Each public page gets a unique title and description. Add favicon and social pre
 
 Initialize the repository locally, ignore macOS metadata, dependencies, build output, local environment files, and Vercel local state. Use atomic feature commits and keep README and task_done.md current.
 
-The active GitHub account is Withcenterdev24, but repository name, visibility, and Vercel account/team must be confirmed or discovered before creating external resources. Prefer a dedicated magnet-website repository over modifying the game repository. Document importing it into Vercel with the Astro framework preset, `npm run build`, and `dist` output. Verify current official Astro and Vercel instructions before implementation.
+The user supplied `https://github.com/Withcenterdev24/mm-website`, verified as an empty public repository owned by the active GitHub account Withcenterdev24. Use this repository for the website. Vercel account/team must be confirmed or discovered before creating external hosting resources. Document importing the repository into Vercel with the Astro framework preset, `npm run build`, and `dist` output. Verify current official Astro and Vercel instructions before implementation.
 
 Do not add Vercel Analytics or another tracking service. Deployment remains static. No custom domain is assumed. Validate the deployed home, support, privacy, and missing-page behavior when deployment access is available. If access is unavailable, report the exact remaining setup step and provide a verified local build.
 
