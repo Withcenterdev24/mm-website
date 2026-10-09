@@ -25,13 +25,14 @@ const { title, description, noindex = false } = Astro.props;
       </a>
       <nav aria-label="Main navigation">
         <a href="/#gameplay">The game</a>
+        <a href="/support/" aria-current={Astro.url.pathname === '/support/' ? 'page' : undefined}>Support</a>
         <a class="nav-button" href="/#download">Get the game <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
     <main id="main" tabindex="-1"><slot /></main>
     <footer class="site-footer">
       <div class="footer-wordmark">A LITTLE MAGNET.<br />A LOT OF MAYHEM.</div>
-      <div class="footer-links"><a href={`mailto:${site.email}`}>Contact Withcenter ↗</a></div>
+      <div class="footer-links"><a href="/support/">Support</a><a href={`mailto:${site.email}`}>Contact Withcenter ↗</a></div>
       <div class="footer-bottom"><span>© {new Date().getFullYear()} {site.publisher}</span><span>Made for a good time.</span></div>
     </footer>
   </body>

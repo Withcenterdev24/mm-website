@@ -20,3 +20,7 @@ The homepage is `/`. Shared publisher, contact, and optional Android/iOS store U
 Game artwork and actual screenshots are copied from the Magnet Mayhem Godot project. Images are optimized at build time with Astro. Nunito is bundled locally; the original font license accompanies it. No analytics, external font service, client UI framework, or backend is required.
 
 Approved design and implementation plan are in `docs/superpowers/`. Progress is tracked in `task_done.md`.
+
+## Support
+
+`/support/` covers controls, training, saved progress, and troubleshooting. Contact uses a mailto link, not a hosted form. Gameplay guidance follows the Godot project README; update it when controls or save behavior change.

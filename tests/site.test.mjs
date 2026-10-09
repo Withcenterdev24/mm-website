@@ -30,3 +30,12 @@ test('missing_store_urls_have_no_download_links', () => {
   assert.equal($('[data-platform]').length, 2);
   assert.equal($('[data-platform] a').length, 0);
 });
+test('support_contact_and_controls_are_accessible_without_scripts', () => {
+  const $ = page('support');
+  assert.ok($('main a[href="mailto:thruthesky@gmail.com"]').length, 'Support email must be actionable');
+  assert.ok($('main table').length, 'Keyboard controls must be readable');
+  assert.ok($('main #training').length, 'Training help must be directly reachable');
+  assert.ok($('main #progress').length, 'Local save limitations must be explained');
+  assert.ok($('main').text().includes('ATTRACT'));
+  assert.ok($('main').text().includes('REPULSE'));
+});
