@@ -1,0 +1,11 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "magnet-mayhem-website",
+  "compatibility_date": "2026-10-01",
+  // Fully static Astro build: serve dist/ as Workers static assets, no adapter needed.
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "force-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
