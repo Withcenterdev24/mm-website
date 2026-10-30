@@ -113,3 +113,11 @@ test('internal_links_fragments_and_assets_resolve', () => {
     'Missing-page visitors can return home',
   );
 });
+test('app_ads_txt_authorizes_admob_publisher', () => {
+  const path = join(dist, 'app-ads.txt');
+  assert.ok(existsSync(path), 'app-ads.txt must be served from the site root');
+  assert.equal(
+    readFileSync(path, 'utf8').trim(),
+    'google.com, pub-6761612871065418, DIRECT, f08c47fec0942fa0',
+  );
+});

@@ -14,6 +14,7 @@
 - ~~Publish the verified website source to GitHub.~~
 - ~~Remove macOS `._*` metadata files and confirm recursive Git exclusions.~~
 - ~~Audit and expand the bilingual privacy policy for game saves, deletion, backups, website hosting, support and privacy requests.~~
+- ~~Publish the AdMob `app-ads.txt` at the site root.~~
 - Confirm privacy operator details, operational retention and release/publication checks in docs/privacy-audit.md.
 - Complete Vercel sign-in/import and verify the live deployment.
 

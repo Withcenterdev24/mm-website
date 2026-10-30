@@ -51,9 +51,11 @@ Artifact tests check routes, internal references, privacy language boundaries, s
 3. Use the **Astro** framework preset, Node **24.x**, build command `npm run build`, and output directory `dist`. The committed `vercel.json` declares the framework/build/output; no server adapter is needed.
 4. Add `PUBLIC_ANDROID_URL` and `PUBLIC_IOS_URL` only when public listings are verified. They must use HTTPS on `play.google.com` and `apps.apple.com`, respectively; malformed values fail the build.
 5. Deploy. Vercel's `VERCEL_PROJECT_PRODUCTION_URL` supplies the actual production domain for canonicals, social images, robots, and sitemap, including in preview builds. An optional `SITE_URL` overrides it for a confirmed custom domain; use an HTTPS origin with no path, query, credentials, or fragment. Enable Vercel's automatic system environment variables if disabled.
-6. Confirm `/`, `/support/`, `/privacy/`, `/robots.txt`, `/sitemap.xml`, and an unknown path. Home, support, and privacy must return 200, and the unknown path must return 404. Copy those real production URLs into store metadata.
+6. Confirm `/`, `/support/`, `/privacy/`, `/robots.txt`, `/sitemap.xml`, `/app-ads.txt`, and an unknown path. Home, support, and privacy must return 200, and the unknown path must return 404. Copy those real production URLs into store metadata.
 
 With no production origin configured, absolute canonical/social URL metadata is omitted, the sitemap has no entries, and robots disallows indexing. Add the confirmed origin and rebuild before indexing a standalone deployment. Vercel preview protection and indexing controls remain managed in the Vercel project.
+
+`public/app-ads.txt` authorizes the AdMob publisher `pub-6761612871065418` under the IAB Tech Lab app-ads.txt spec. AdMob only finds it when this site's domain is listed as the developer website in the Google Play and App Store listings.
 
 Static deployment requires no Vercel adapter, database, or runtime secrets. A successful local build is not proof of a live deployment. `task_done.md` records the actual hosting status.
 
